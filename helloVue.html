@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>helloVue</title>
+
+    <!--<link rel="stylesheet" href="helloVue.css"/>-->
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--    <script type="text/javascript">
+    </script>-->
+
+</head>
+<body>
+
+<div id="app">
+    {{ message }}
+</div>
+
+<!--<script src="helloVue.js"></script>-->
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    });
+    app.message = 'Hello Vue! 您好';
+</script>
+
+</body>
+</html>
